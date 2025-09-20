@@ -3,16 +3,12 @@ import { ProductDetails } from '@/app/types/productDetails.model'
 import React from 'react'
 import { StarRating } from 'react-flexible-star-rating'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-
-// import required modules
 import { Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { useCart } from '@/app/context/CartContext';

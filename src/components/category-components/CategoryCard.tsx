@@ -9,7 +9,6 @@ export default function CategoryCard({ cat }: { cat:Categories }) {
       <div className="relative md:h-[250px] h-[150px] aspect-[1/1] w-full rounded-full overflow-hidden">
         <Image src={cat.image}
           fill
-          //  priority
           loading='eager'
           sizes='(max-width:768px) 100vw (max-width:1200) 50vw , 25vw'
           alt='slider-image'

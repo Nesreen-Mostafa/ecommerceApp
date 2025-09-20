@@ -55,8 +55,7 @@ export default function checkoutPage() {
         const response = await getOnlinePayment(cartId as string, value)
 
         if (response?.data.status === "success") {
-          // setCartDetails(null)
-          // router.push("/")
+    
           window.location.href = response.data.session.url
 
         }
