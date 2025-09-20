@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/ecommerceApp', 
-  assetPrefix: '/ecommerceApp/', 
+  /* config options here */
   images: {
    remotePatterns: [
       {

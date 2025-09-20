@@ -15,7 +15,7 @@ interface Inputs {
 export default function ResetPassword() {
   const [errorMessage, seterrorMessage] = useState(null);
   const router = useRouter()
-  const { register, handleSubmit, formState: { errors, isSubmitting }, } = useForm<Inputs>();
+  const { register, handleSubmit, formState: { errors, }, } = useForm<Inputs>();
 
   async function onSubmit(value: Inputs) {
 
