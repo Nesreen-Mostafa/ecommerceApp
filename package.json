@@ -1,16 +1,14 @@
 {
   "name": "ecommerce-app",
   "version": "0.1.0",
-  "homepage": "https://Nesreen-Mostafa.github.io/ecommerceApp",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build && next export",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out"
+}
+,
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-label": "^2.1.7",
