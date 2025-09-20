@@ -1,5 +1,6 @@
 import { getProductDetails } from '@/app/actions/products.action';
 import ProductDetailsComp from '@/components/products-components/ProductDetailsComp';
+export const runtime = 'edge';
 
 export default async function ProductDetails({params}:{params :{id:string}}) {
   const {id} = await params;

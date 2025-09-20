@@ -1,5 +1,5 @@
 import { getSpecificSubCategory } from "@/app/actions/categories.action";
-
+export const runtime = 'edge';
 export default async function SubCategory({ params }: { params: { subcategory: string } }) {
 
     const { subcategory } = params;

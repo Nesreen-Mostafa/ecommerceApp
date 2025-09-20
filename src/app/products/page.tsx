@@ -1,6 +1,7 @@
 import React from 'react'
 import { getProducts } from '../actions/products.action';
 import ProductsGridSystem from '@/components/products-components/ProductsGridSystem';
+export const runtime = 'edge';
 
 
 

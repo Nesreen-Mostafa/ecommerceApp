@@ -2,7 +2,7 @@ import React from 'react'
 import { getCategories } from '../actions/categories.action';
 import CategoryCard from '@/components/category-components/CategoryCard';
 import { CategoryDetails } from '@/app/types/categoryDetails.model';
-
+export const runtime = 'edge';
 
 export default async function CategoriesPage() {
   const response = await getCategories();

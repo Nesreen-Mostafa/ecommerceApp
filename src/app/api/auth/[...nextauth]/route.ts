@@ -1,6 +1,6 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-
+export const runtime = "nodejs";
 export const Options : NextAuthOptions = {
 
     providers: [
