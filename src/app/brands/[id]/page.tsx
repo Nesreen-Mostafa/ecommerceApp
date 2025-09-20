@@ -1,7 +1,7 @@
 import { getBrandDetails } from '@/app/actions/brands.action';
 import BrandDetailsComp from '@/components/brand-components/BrandDetailsComp';
 import React from 'react'
-export const runtime = 'edge';
+
 export default async function BrandDetails({ params }: { params: { id: string } }) {
 
     const  brandDetails  = await getBrandDetails(params.id);

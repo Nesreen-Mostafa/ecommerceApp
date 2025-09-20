@@ -1,3 +1,5 @@
+
+
 import MainSlider from "@/components/slider-components/MainSlider";
 import { getCategories } from "./actions/categories.action";
 import CatSliderComp from "@/components/slider-components/CatSliderComp";
