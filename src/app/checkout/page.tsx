@@ -10,8 +10,8 @@ import { useForm } from 'react-hook-form'
 import { getCashPayment, getOnlinePayment } from '../actions/payment.action'
 import { useCart } from '../context/CartContext'
 
-export default function checkoutPage() {
-  const [errorMessage, seterrorMessage] = useState(null);
+export default function CheckoutPage() {
+  const [errorMessage] = useState(null);
   const router = useRouter()
   const { cartDetails, setCartDetails } = useCart();
   const [paymentMethod, setPaymentMethod] = useState<"cash" | "online" | null>(null)

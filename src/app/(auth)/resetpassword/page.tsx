@@ -25,7 +25,6 @@ export default function ResetPassword() {
 
 
       if (response?.data?.message === "success") {
-        // login/
         router.push("/login")
       }
 

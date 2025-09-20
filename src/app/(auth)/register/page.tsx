@@ -45,7 +45,6 @@ export default function RegisterPage() {
 
 
       if (response?.data?.message === "success") {
-        // login/
         router.push("/login")
       }
 
