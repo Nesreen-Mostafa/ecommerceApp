@@ -4,7 +4,6 @@ import ProductsGridSystem from '@/components/products-components/ProductsGridSys
 
 
 
-
 export default async function ProductsPage() {
   const  products = await getProducts();
 

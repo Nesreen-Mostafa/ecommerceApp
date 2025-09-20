@@ -15,7 +15,7 @@ interface Inputs {
 export default function ResetPassword() {
   const [errorMessage, seterrorMessage] = useState(null);
   const router = useRouter()
-  const { register, handleSubmit, formState: { errors, }, } = useForm<Inputs>();
+  const { register, handleSubmit, formState: { errors, isSubmitting }, } = useForm<Inputs>();
 
   async function onSubmit(value: Inputs) {
 
@@ -25,6 +25,7 @@ export default function ResetPassword() {
 
 
       if (response?.data?.message === "success") {
+        // login/
         router.push("/login")
       }
 

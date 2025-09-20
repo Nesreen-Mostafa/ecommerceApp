@@ -52,7 +52,7 @@ try {
 }
 }
 
-async function getOnlinePayment(cartId :string , shippingAddress:ShippingAddressTypes) {
+async function getOnlinePayment(cartId :string , shippingAddress: ShippingAddressTypes) {
 
 try {
 
