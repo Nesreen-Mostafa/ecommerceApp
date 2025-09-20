@@ -45,7 +45,9 @@ export default function ProductCard({ product }: { product: Products }) {
     toast.success(response?.message)
     await getWishlistDetails()
   }
-  const isInWishlist = wishlistDetails?.data.some((item) => item._id === product._id);
+const isInWishlist = Array.isArray(wishlistDetails?.data) 
+  ? wishlistDetails.data.some((item) => item._id === product._id)
+  : false;
 
   return (
     <div>
