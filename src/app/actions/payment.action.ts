@@ -6,13 +6,13 @@ import axios from "axios"
 interface ShippingAddressTypes {
 
     details: string;
-    phone: number;
+    phone: string;
     city: string;
 
 }
 
 
-async function getCashPayment(cartId :string , shippingAddress: {shippingAddress : ShippingAddressTypes}) {
+async function getCashPayment(cartId :string , shippingAddress: ShippingAddressTypes) {
 
 try {
 
@@ -52,7 +52,7 @@ try {
 }
 }
 
-async function getOnlinePayment(cartId :string , shippingAddress: {shippingAddress : ShippingAddressTypes}) {
+async function getOnlinePayment(cartId :string , shippingAddress:ShippingAddressTypes) {
 
 try {
 
